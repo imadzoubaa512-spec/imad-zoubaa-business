@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Website</title>
+    <meta name="description" content="Personal portfolio of a Front-End Web Developer specialized in HTML, CSS and JavaScript.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar container">
+            <a href="#home" class="logo">Dev<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="contact-btn">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero container" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">Welcome to the World of the Future.</p>
+
+                <h1>
+                    Hi, I'm <span>Imad Zoubaa</span><br>
+                    Software Developer.
+                </h1>
+
+                <p class="hero-description">
+                    Welcome to the World of the Future,
+                    where ideas turn into creativity and innovation becomes reality.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Let's Talk</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub ↗</a>
+                    <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">LinkedIn ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="profile-card">
+                    <img src="WhatsApp Image 2026-11-05 at 18.05.14.jpeg" alt="My profile photo"
+                         onerror="this.style.display='none'">
+                    <div class="profile-placeholder">
+                        <span>&lt;/&gt;</span>
+                        <p>Creative Developer</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section container" id="about">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+
+            <p class="about-text">
+                I am IMAD ZOUBAA, a Software Developer and Digital
+                Marketer with a diploma in IT .
+                I specialize in web: HTML, CSS , JavaScript , Php , Python , Java , Sql , Sql server ...
+                I create modern, responsive websites and
+                help businesses build their digital presence.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section container" id="skills">
+            <p class="eyebrow">WHAT I USE</p>
+            <h2>My <span>Skills</span></h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <span>🌐</span>
+                    <h3>HTML5</h3>
+                    <p>Web Structure</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>🎨</span>
+                    <h3>CSS3</h3>
+                    <p>Responsive Design</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>⚡</span>
+                    <h3>JavaScript</h3>
+                    <p>Interactive Websites</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>🔧</span>
+                    <h3>Git & GitHub</h3>
+                    <p>Version Control</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section container" id="projects">
+            <p class="eyebrow">MY RECENT WORK</p>
+            <h2>Featured <span>Projects</span></h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-visual">01</div>
+                    <div class="project-info">
+                        <h3>Business Website</h3>
+                        <p>A modern responsive website for a small business.</p>
+                        <span>HTML · CSS · JavaScript . Python...</span>
+                        <a href="#" target="_blank">View Project ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">02</div>
+                    <div class="project-info">
+                        <h3>Restaurant Website</h3>
+                        <p>A website concept for a restaurant and its services.</p>
+                        <span>HTML · CSS · JavaScript</span>
+                        <a href="#" target="_blank">View Project ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">03</div>
+                    <div class="project-info">
+                        <h3>Landing Page</h3>
+                        <p>A landing page designed to present a product.</p>
+                        <span>HTML · CSS · JavaScript</span>
+                        <a href="#" target="_blank">View Project ↗</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section container" id="contact">
+            <p class="eyebrow">HAVE A PROJECT?</p>
+            <h2>Let's Work <span>Together</span></h2>
+
+            <p class="about-text">
+                Have a website idea or need a developer?
+                Feel free to contact me.
+            </p>
+
+            <a class="btn primary"
+               href="mailto:imadzoubaa7@gmail.com">
+                Send Me an Email
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Imad Zoubaa. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
